@@ -15,7 +15,7 @@ const Input = ({ labelText, inputType = 'text', inputValue, handleChange, inputP
                 placeholder={inputPlaceholder}  // 입력 필드의 플레이스홀더 텍스트
                 // 예시: <Input inputPlaceholder="Enter your name" />
                 className={`input_field ${hasError ? 'input_error' : ''}`}  // 입력 필드의 클래스, 에러 상태일 경우 'input_error' 클래스 추가
-                // 예시: <Input hasError={true} />
+                /// 예시: <Input hasError={true} />
             />
             {hintMessage && <span className={`input_hint ${hasError ? 'error_hint' : ''}`}>{hintMessage}</span>}
         </div>
