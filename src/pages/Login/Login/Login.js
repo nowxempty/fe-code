@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import {LoginClick,checkAccessTokenValidity} from './Login_fuc.js';
+import {LoginClick,checkAccessTokenValidity} from './Login_func.js';
 import './Login.css';
 //npm run start:windows
 //npm run start

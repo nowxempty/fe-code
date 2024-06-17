@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import {JoinClick} from './Join_fuc.js';
+import {JoinClick} from './Join_func.js';
 import './Join.css';
 function JoinPage() {
     const navigate = useNavigate();
