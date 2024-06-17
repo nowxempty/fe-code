@@ -1,3 +1,41 @@
-*{
-    width: 100%;
-}
+.button {
+    all: unset;
+    background-color: #007bff;
+    color: white;
+    border-radius: 7px;
+    box-sizing: border-box;
+    height: 40px;
+    position: relative;
+    width: 196px;
+  }
+  
+  .button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  
+  .button .text-wrapper-2 {
+    display: flex;
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button:hover  {
+    background-color: #0056b3;
+  }
+  
+
+  .button:active {
+    background-color: #365fbf; /* 버튼이 눌렸을 때 어두운 색 */
+    transform: scale(0.98); /* 살짝 눌리는 효과 */
+    transition: background-color 0.1s ease, transform 0.1s ease;
+  }
