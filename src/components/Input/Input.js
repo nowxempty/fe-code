@@ -3,7 +3,7 @@ import './Input.css';
 
 const Input = ({ labelText, inputType = 'text', inputValue, handleChange, inputPlaceholder, hintMessage, hasError }) => {
     return (
-        <div className="form_group">
+        <div className="input">
             {labelText && <label className="input_label">{labelText}</label>}
             <input
                 type={inputType}                // 입력 필드의 타입 (예: text, password, email 등)
@@ -16,6 +16,7 @@ const Input = ({ labelText, inputType = 'text', inputValue, handleChange, inputP
                 // 예시: <Input inputPlaceholder="Enter your name" />
                 className={`input_field ${hasError ? 'input_error' : ''}`}  // 입력 필드의 클래스, 에러 상태일 경우 'input_error' 클래스 추가
                 /// 예시: <Input hasError={true} />
+
             />
             {hintMessage && <span className={`input_hint ${hasError ? 'error_hint' : ''}`}>{hintMessage}</span>}
         </div>

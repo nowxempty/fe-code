@@ -1,25 +1,20 @@
 .button {
-    width: 100%;
     all: unset;
     background-color: #007bff;
     color: white;
     border-radius: 7px;
     box-sizing: border-box;
     height: 40px;
+    position: relative;
     width: 196px;
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.207);
-    display: flex; 
-  
-    justify-content: center;
-    transition: background-color 0.1s ease, transform 0.1s ease; 
   }
   
-  .button:hover {
+  .button:hover{
     opacity: 0.9;
     cursor: pointer;
   }
   
-  .button .text {
+  .button .text-wrapper-2 {
     display: flex;
     color: #ffffff;
     font-family: "Inter", Helvetica;
@@ -28,11 +23,19 @@
     height: 40px;
     letter-spacing: 0;
     line-height: normal;
-    align-items: center; 
-    justify-content: center; 
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   
+  .button:hover  {
+    background-color: #0056b3;
+  }
+  
+
   .button:active {
-    transform: scale(0.97);
+    background-color: #365fbf; /* 버튼이 눌렸을 때 어두운 색 */
+    transform: scale(0.98); /* 살짝 눌리는 효과 */
+    transition: background-color 0.1s ease, transform 0.1s ease;
   }
-  
